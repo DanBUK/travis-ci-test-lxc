@@ -1,3 +1,4 @@
+#!/usr/bin/env python27
 import unittest
 
 def fun(x):
