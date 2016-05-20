@@ -2,6 +2,9 @@ sudo: required
 dist: truty 
 
 before_install:
+  - cat /etc/apt/sources.list
+  - echo "deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
+  - cat /etc/apt/sources.list
   - sudo apt-get -qq update
   - sudo apt-get install -y -t trusty-backports lxd
 
