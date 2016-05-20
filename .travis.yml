@@ -3,7 +3,7 @@ dist: truty
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y lxd
+  - sudo apt-get install -y -t trusty-backports lxd
 
 language: python
 python:
