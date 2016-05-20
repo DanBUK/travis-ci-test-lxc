@@ -1,5 +1,9 @@
 sudo: required
-dist: xenial
+dist: truty 
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y lxd
 
 language: python
 python:
