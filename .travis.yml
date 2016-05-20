@@ -6,7 +6,7 @@ before_install:
   - echo "deb http://archive.ubuntu.com/ubuntu precise-backports main restricted universe multiverse" | sudo tee -a /etc/apt/sources.list
   - cat /etc/apt/sources.list
   - sudo apt-get -qq update
-  - sudo apt-get install -y -t trusty-backports lxd
+  - sudo apt-get install -y lxd
 
 language: generic
 # python:
